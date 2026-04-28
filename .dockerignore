@@ -1,0 +1,20 @@
+# Git / local clutter
+.git
+.gitignore
+README.md
+evidence
+**/.DS_Store
+**/*.log
+
+# Kubernetes and scripts are not needed for the image build
+kubernetes
+scripts
+kind-config.yaml
+
+# Keep the build context lean; Dockerfile copies only what it needs
+Server/MuchToDo/docker-compose.yaml
+Server/MuchToDo/.env
+Server/MuchToDo/.env.*
+Server/MuchToDo/bin
+Server/MuchToDo/.cache
+Server/MuchToDo/tmp
